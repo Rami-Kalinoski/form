@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/moon.png" type="image/x-icon" id="favicon">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tac+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>FORM</h1>
+    </header>
+    <main>
+        <section>
+            <div class="mode-div" id="mode">
+                <img src="./assets/moon.png" alt="moon" class="mode-img dark-mode-img" id="mode-img">
+            </div>
+            <p class="required-mark">* required</p>
+        </section>
+        <form action="" method="" id="form">
+            <!-- INPUTS CONTAINER -->
+            <div class="inputs-container">
+                <!-- INPUTS TEXT -->
+                <div class="double-div">
+                    <div class="input-div">
+                        <label for="name" class="label">Name <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="text" class="input" id="name" name="name" placeholder="John" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="name-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="name-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="name-condition">This field cannot be empty nor include any number or simbol.</p>
+                    </div>
+                    <div class="input-div">
+                        <label for="last-name" class="label">Last Name <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="text" class="input" id="last-name" name="last-name" placeholder="Doe" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="last-name-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="last-name-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="last-name-condition">This field cannot be empty nor include any number or simbol.</p>
+                    </div>
+                </div>
+                <div class="double-div">
+                    <div class="input-div">
+                        <label for="email" class="label">Email <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="email" class="input" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="email-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="email-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="email-condition">This field must contain valid email direction.</p>
+                    </div>
+                    <div class="input-div">
+                        <label for="phone" class="label">Phone Number <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="text" class="input" id="phone" name="phone" placeholder="+1 (000) 000-0000" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="phone-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="phone-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="phone-condition">This filed must contain a valid and complete phone number.</p>
+                    </div>
+                </div>
+                <div class="double-div">
+                    <div class="input-div">
+                        <label for="country" class="label">Country <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="text" class="input" id="country" name="country" placeholder="United States" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="country-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="country-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="country-condition">This field cannot be empty nor include any number or simbol.</p>
+                    </div>
+                    <div class="input-div">
+                        <label for="city" class="label">City <b class="required-mark">*</b></label>
+                        <div class="input-box">
+                            <input type="text" class="input" id="city" name="city" placeholder="New York" required>
+                            <img src="./assets/valid.png" alt="Valid" class="input-box-img void valid" id="city-valid-img">
+                            <img src="./assets/invalid.png" alt="Invalid" class="input-box-img void invalid" id="city-invalid-img">
+                        </div>
+                        <p class="condition hidden" id="city-condition">This field cannot be empty nor include any number or simbol.</p>
+                    </div>
+                </div>
+                <!-- ADITIONAL MESSAGE -->
+                <div class="message-div">
+                    <label for="message" class="label">Aditional Message</label>
+                    <textarea name="message" class="message-input" id="message" name="message" cols="30" rows="10" placeholder="Aditional information for us"></textarea>
+                </div>
+            </div>
+            <div class="buttons-div">
+                <button class="btn" id="clear-btn">CLEAR</button>
+                <button class="btn" id="submit-btn">SUBMIT</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p>This is a test site for a validated form.</p>
+            <p>Please, do not submit sensitive real information. You can help me sending fake information to try and let me see if this woks.</p>
+            <p>Thank you ;)</p>
+        </div>
+        <div class="footer-bot">
+            <div class="responsive-footer1">
+                <a href="https://www.linkedin.com/in/ramirokalinoski/" target="_blank">LinkedIn</a>
+                <p>ramikalinoski@gmail.com</p>
+            </div>
+            <div class="responsive-footer2">
+                <a href="https://github.com/Rami-Kalinoski" target="_blank">GitHub</a>
+                <p>Developed by Ramiro Kalinoski</p>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

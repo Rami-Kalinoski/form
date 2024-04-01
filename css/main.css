@@ -1,0 +1,457 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  transition: ease 0.5s;
+}
+
+.light-body {
+  background-color: #eeeeee;
+}
+
+header {
+  background-color: #111111 0.8;
+  border-bottom: solid 1.5px #555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(25px);
+  z-index: 1;
+  transition: ease 0.5s;
+  padding: 2rem 0rem;
+}
+header h1 {
+  color: #eeeeee;
+  font-size: 7rem;
+  font-family: "Tac One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: default;
+}
+
+.light-header {
+  background-color: #eeeeee 0.8;
+  backdrop-filter: blur(15px);
+}
+.light-header h1 {
+  color: #2a2a2a;
+}
+
+main section {
+  width: 100%;
+  height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 5rem 0rem 2.5rem 0rem;
+}
+main section .mode-div {
+  width: 10rem;
+  height: 70%;
+  border: solid 1px #555555;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: ease 0.5s;
+  padding: 1rem;
+}
+main section .mode-div:hover .mode-img {
+  left: 35%;
+  transition: ease 1.5s;
+}
+main section .mode-div .mode-img {
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  transition: ease 1.5s;
+}
+main section .mode-div .dark-mode-img {
+  left: 5%;
+  transition: ease 1.5s;
+}
+main section .light-mode-div {
+  border: solid 1px #eab14d;
+  transition: ease 0.5s;
+}
+main section .light-mode-div:hover .light-mode-img {
+  right: 35%;
+  transition: ease 1.5s;
+}
+main section .light-mode-div .light-mode-img {
+  right: 5%;
+  transition: ease 1.5s;
+}
+main section .required-mark {
+  color: #d25a66;
+  font-size: 1.5rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main form {
+  padding: 5rem 20% 10rem 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5rem;
+}
+main form .inputs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+}
+main form .inputs-container .label {
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: ease 0.5s;
+}
+main form .inputs-container .required-mark {
+  color: #d25a66;
+  font-size: 2rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main form .inputs-container .light-label {
+  color: #111111;
+  font-weight: 500;
+}
+main form .inputs-container .condition {
+  color: #f74354;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main form .inputs-container .hidden {
+  visibility: hidden;
+}
+main form .inputs-container .double-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main form .inputs-container .double-div .input-div {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+main form .inputs-container .double-div .input-div .input-box {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+main form .inputs-container .double-div .input-div .input-box .input {
+  width: 92.5%;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: none;
+  border: solid 1px #555555;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.5s;
+  padding: 1rem 1.5rem;
+}
+main form .inputs-container .double-div .input-div .input-box .input:focus {
+  cursor: text;
+  outline: none;
+}
+main form .inputs-container .double-div .input-div .input-box .light-input {
+  color: #111111;
+  font-weight: 500;
+  border: solid 1px #888888;
+}
+main form .inputs-container .double-div .input-div .input-box .input-box-img {
+  width: auto;
+  height: 2.5rem;
+}
+main form .inputs-container .double-div .input-div .input-box .void {
+  display: none;
+}
+main form .inputs-container .double-div .input-div .input-box .border-focus-white {
+  border: solid 1.5px #eeeeee;
+}
+main form .inputs-container .double-div .input-div .input-box .border-black {
+  border: solid 1.5px #010101;
+}
+main form .inputs-container .double-div .input-div .input-box .border-invalid {
+  border: solid 1px #f74354;
+}
+main form .inputs-container .double-div .input-div .input-box .border-valid {
+  border: solid 1px #a5eb78;
+}
+main form .inputs-container .message-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+main form .inputs-container .message-div .message-input {
+  width: 100%;
+  height: 20rem;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: none;
+  border: solid 1px #555555;
+  border-radius: 5px;
+  resize: none;
+  white-space: pre-wrap;
+  cursor: pointer;
+  transition: ease 0.5s;
+  padding: 1rem 1.5rem;
+}
+main form .inputs-container .message-div .message-input:focus {
+  cursor: text;
+  outline: none;
+}
+main form .inputs-container .message-div .border-white {
+  border: solid 1.5px #eeeeee;
+}
+main form .inputs-container .message-div .border-black {
+  border: solid 1.5px #010101;
+}
+main form .inputs-container .message-div .light-message-input {
+  color: #111111;
+  font-weight: 500;
+}
+main form .buttons-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main form .buttons-div .btn {
+  width: 47.5%;
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #333333;
+  border: solid 1px #333333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease 0.5s;
+  padding: 1.5rem 0rem;
+}
+main form .buttons-div .btn:hover {
+  transition: ease 0.5s;
+  background-color: #555555;
+  border: solid 1px #555555;
+}
+main form .buttons-div .light-btn {
+  color: #111111;
+  font-weight: 500;
+  background-color: #bebebe;
+  border: solid 1px #bebebe;
+  transition: ease 0.5s;
+}
+main form .buttons-div .light-btn:hover {
+  background-color: #dfdfdf;
+  border: solid 1px #dfdfdf;
+}
+
+footer {
+  border-top: solid 1.5px #555555;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 10rem;
+}
+footer .footer-top {
+  width: 100%;
+  border-bottom: solid 1.5px #555555;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  transition: ease 0.5s;
+  padding: 5rem 20%;
+}
+footer .footer-top p {
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  cursor: default;
+}
+footer .light-footer-top p {
+  color: #111111;
+  font-weight: 500;
+}
+footer .footer-bot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3rem;
+  transition: ease 0.5s;
+  padding: 0rem 10% 5rem 10%;
+}
+footer .footer-bot div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-bot div p {
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  cursor: default;
+}
+footer .footer-bot div a {
+  color: #eeeeee;
+  font-size: 1.75rem;
+  font-family: "Inika", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  position: relative;
+}
+footer .footer-bot div a::after {
+  width: 0;
+  height: 1px;
+  content: "";
+  position: absolute;
+  background-color: #eeeeee;
+  bottom: -1px;
+  left: 0;
+  transition: ease 0.5s;
+}
+footer .footer-bot div a:hover::after {
+  width: 100%;
+}
+footer .light-footer-bot div p {
+  color: #111111;
+  font-weight: 500;
+}
+footer .light-footer-bot div a {
+  color: #111111;
+  font-weight: 500;
+}
+footer .light-footer-bot div a::after {
+  background-color: #111111;
+}
+
+@media screen and (max-width: 1200px) {
+  main form .inputs-container .double-div {
+    flex-direction: column;
+    justify-content: start;
+    gap: 2.5rem;
+  }
+  main form .inputs-container .double-div .input-div {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main form {
+    padding-bottom: 1rem;
+  }
+  main form .inputs-container .double-div .input-div .input-box .input {
+    width: 100%;
+  }
+  main form .inputs-container .double-div .input-div .input-box .input-box-img {
+    display: none;
+  }
+  main form .buttons-div {
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+  }
+  main form .buttons-div .btn {
+    width: 100%;
+  }
+  footer .footer-bot {
+    flex-direction: row;
+  }
+  footer .footer-bot div {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer .footer-bot .responsive-footer1 {
+    align-items: start;
+  }
+  footer .footer-bot .responsive-footer2 {
+    align-items: end;
+  }
+}
+@media screen and (max-width: 700px) {
+  header h1 {
+    font-size: 6rem;
+  }
+  main section .required-mark {
+    color: #d25a66;
+    font-size: 1.25rem;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  main form .inputs-container .label {
+    font-size: 1.5rem;
+  }
+  main form .inputs-container .condition {
+    font-size: 1.5rem;
+  }
+  main form .inputs-container .double-div .input-div .input-box .input {
+    font-size: 1.5rem;
+  }
+  main form .inputs-container .message-div .message-input {
+    font-size: 1.5rem;
+  }
+  main form .buttons-div .btn {
+    font-size: 1.5rem;
+  }
+  footer .footer-top p {
+    font-size: 1.5rem;
+  }
+  footer .footer-bot {
+    flex-direction: column;
+  }
+  footer .footer-bot div p, footer .footer-bot div a {
+    font-size: 1.5rem;
+  }
+  footer .footer-bot .responsive-footer1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  footer .footer-bot .responsive-footer2 {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
